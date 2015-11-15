@@ -29,14 +29,28 @@ AMyActor::AMyActor()
 
 	TArray<FVector> vertices;
 
-	vertices.Add(FVector(0, 0, 0));
+	vertices.Add(FVector(100, 0, 0));
 	vertices.Add(FVector(0, 100, 0));
 	vertices.Add(FVector(0, 0, 100));
+	vertices.Add(FVector(100, 0, -100)); 
+	vertices.Add(FVector(100, 0, 0));
+	vertices.Add(FVector(0, 100, 0));
+	vertices.Add(FVector(0, 0, 100));
+	vertices.Add(FVector(100, 0, -100));
 
 	TArray<int32> Triangles;
 	Triangles.Add(0);
 	Triangles.Add(1);
 	Triangles.Add(2);
+	Triangles.Add(0);
+	Triangles.Add(1);
+	Triangles.Add(3);
+	Triangles.Add(1);
+	Triangles.Add(2);
+	Triangles.Add(3);
+	Triangles.Add(0);
+	Triangles.Add(2);
+	Triangles.Add(3);
 
 	TArray<FVector> normals;
 	normals.Add(FVector(1, 0, 0));
